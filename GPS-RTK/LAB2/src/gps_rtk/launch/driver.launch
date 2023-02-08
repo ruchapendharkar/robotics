@@ -1,0 +1,7 @@
+<launch>
+
+<arg name="port" default = "/dev/ttyACM1"/>
+
+<node pkg="gps_rtk" name = "gpsdriver" type = "driver.py" args ="$(arg port)"/>
+
+</launch>
